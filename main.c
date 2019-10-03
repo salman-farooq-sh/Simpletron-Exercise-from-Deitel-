@@ -4,8 +4,7 @@
 //const int MEM_SIZE = 100;
 
 int main() {
-	//sample programs to have a quick try. Uncomment one.
-	
+	//sample programs to have a quick try. Uncomment one.	
 	//float memory[MEM_SIZE] = { 1017,2018,3117,4215,2018,3021,2118,1019,2020,3119,4112,4001,2019,2120,4001,1120,4300,0000,0000,0000,0000,0001 };
 	//float memory[MEM_SIZE] = { 1065, 2065, 1009, 3209, 2110, 1110, 4300 };
 	//float memory[MEM_SIZE] = { 1250, 1350, 1400, 4300 };
