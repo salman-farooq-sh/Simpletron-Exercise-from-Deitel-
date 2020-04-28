@@ -10,8 +10,9 @@ int main() {
 	//float memory[MEM_SIZE] = { 1250, 1350, 1400, 4300 };
 	//float memory[MEM_SIZE] = { 1020, 2020, 4105, 1025, 1025, 1120, 4300 };
 	//float memory[MEM_SIZE] = { 1009, 2009, 4106, 3008, 2108, 4000, 1108, 4300, 0000, 0000  };
-	float memory[MEM_SIZE] = { 1021,2021,3120,2121,1018,4216,1019,2018,3119,4112,2019,2118,2021,3120,2121,4005,1118,4300,0000,0000,0001,0000 };
-	//float memory[MEM_SIZE];
+	//float memory[MEM_SIZE] = { 1021,2021,3120,2121,1018,4216,1019,2018,3119,4112,2019,2118,2021,3120,2121,4005,1118,4300,0000,0000,0001,0000 };
+
+	float memory[MEM_SIZE];
 	
 	//registers
 	float accumulator = 0;
@@ -22,7 +23,8 @@ int main() {
 	
 	printf("\nEnter instructions:\n");
 	
-	//load( memory );
+	// comment the following line if you are using one of the sample programs above.
+	load( memory );
 	
 	printf("\n*** Program loading completed ***\n*** Program execution begins"
 		   "***\n\n--------------------------------------\n\n");
