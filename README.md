@@ -13,18 +13,18 @@ The SIMPLETRON is capable of handling floating point numbers.
 
 ## A description of all the operation codes
 
-1. **Input/Output operatons:**
+1. **Input / Output operatons:**
 	+ `10` Read a word from the terminal into a given location in memory.
 	+ `11` Write a word from a given location in memory to the terminal.
 	+ `12` Read a string of characters from the terminal in the given memory location. (Each memory location holds two characters except for the first one which holds one character and the length of the string. Subsequent memory locations are used for the purpose as needed)
 	+ `13` Write a string of characters to the terminal from a given memory location.
 	+ `14` Write a newline to the terminal
 
-1. LOAD/STORE operatons:
+1. **Load / Store operatons:**
 	+ `20` Load a word from a given location in memory into the accumulator.
 	+ `21` Store a word from the accumulator into a given location in memory.
 
-1. Arithmetic operatons:
+1. **Arithmetic operatons:**
 	+ `30` Add a word from a given location in memory to the word in the accumulator (leave result in accumulator).
 	+ `31` Subtract a word from a given location in memory from the word in the accumulator (leave result in accumulator).
 	+ `32` Divide a word from a given location in memory into the word in the accumulator (leave result in accumulator).
@@ -32,7 +32,7 @@ The SIMPLETRON is capable of handling floating point numbers.
 	+ `34` Divide what is in the accumulator by a word from a given location in memory and calculate the remainder (leave result in accumulator)
 	+ `35` Exponentiate what is in the accumulator by a word from a given location in memory (leave result in accumulator)
 
-1. Transfer-of-control operations:
+1. **Transfer-of-control operations:**
 	+ `40` Branch to a specific location in memory unconditionally.
 	+ `41` Branch to a specific location in memory if the accumulator is negative.
 	+ `42` Branch to a specific location in memory if the accumulator is zero.
@@ -44,7 +44,7 @@ _Note: All operands, when needed with a operation code and 00 otherwise, are mem
 This program reads a series of numbers and determines and prints the smallest of them. The first number entered is taken as the number of subsequent inputs.
 
 Memory Location | Instruction | Comments
----: | --- | :---
+---: | :---: | :---
 `00` | `1021` | `Read a word from terminal into location 21`
 `01` | `2021` | `Load into accumulator the contents of location 21`
 `02` | `3120` | `Subtract from accumulator the word in location 20`
