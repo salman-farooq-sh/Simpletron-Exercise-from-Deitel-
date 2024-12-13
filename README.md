@@ -2,14 +2,13 @@
 
 ## INTRODUCTION:
 
-The SIMPLETRON contains an accumulator — a "special register" in which information is put before the SIMPLETRON uses that information in calculations or examines it in various ways. All information in the SIMPLETRON is handled in terms of words. A word is a signed decimal number such as +3364, -1293, +0007, -0001 and so on. The SIMPLETRON is equipped with a 100-word memory (in its default configuration, but this can be varied by changing the macro "MEM_SIZE" in "SIMPLETRON.h") and these words are referenced by their location numbers 00, 01, ..., 99.  
+The SIMPLETRON contains an accumulator - a "special register" in which information is put before the SIMPLETRON uses that information in calculations or examines it in various ways. All information in the SIMPLETRON is handled in terms of words. A word is a signed decimal number such as +3364, -1293, +0007, -0001 and so on. The SIMPLETRON is equipped with a 100-word memory (in its default configuration, but this can be varied by changing the macro "MEM_SIZE" in "SIMPLETRON.h") and these words are referenced by their location numbers 00, 01, ..., 99.  
 
 Before running an SML (SIMPLETRON Machine Language) program, we must load or place the program into memory. The first instruction (or statement) of every SML program is always placed in location 00. Each instruction written in SML occupies one word of the SIMPLETRON’s memory. Each location in the Simpletron’s memory may contain either an instruction, a data value used by a program or an unused (and hence undefined) area of memory. The first two digits of each SML instruction are the operation code, which specifies the operation to be performed. ALL SML operation codes are summarised ahead. 
 
 Subsequent digits of each SML instruction are the operand, which is the address of the memory location containing the word to which the operation applies. A dump of all registers and the memory is provided after execution of ALL programs.
 
 The SIMPLETRON is capable of handling floating point numbers.
-
 
 ## A description of all the operation codes
 
